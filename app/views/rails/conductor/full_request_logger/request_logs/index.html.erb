@@ -4,6 +4,6 @@
 
 <%= form_tag url: rails_conductor_request_logs_path do %>
   <p>Copy the X-Request-Id header and paste it in:</p>
-  <%= text_field_tag :id, size: 40, placeholder: "0540689b-1ec6-4b92-ae8e-1c55bf7c3b79", autofocus: true %>
+  <%= text_field_tag :id, '', placeholder: "0540689b-1ec6-4b92-ae8e-1c55bf7c3b79", autofocus: true %>
   <%= submit_tag "Retrieve" %>
 <% end %>
