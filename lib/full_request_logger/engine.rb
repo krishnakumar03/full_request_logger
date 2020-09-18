@@ -18,7 +18,7 @@ module FullRequestLogger
         FullRequestLogger.ttl         = app.config.full_request_logger.ttl   || 10.minutes
         FullRequestLogger.redis       = app.config.full_request_logger.redis || {}
         FullRequestLogger.eligibility = app.config.full_request_logger.eligibility || true
-        FullRequestLogger.credentials = false
+        FullRequestLogger.credentials = app.config.full_request_logger.credentials || app.credentials.full_request_logger
       end
     end
 
